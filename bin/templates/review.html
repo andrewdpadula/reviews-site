@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title th:text="${review.title}"></title>
+	<title th:text="'Review of: ' + ${review.title}"></title>
 </head>
 <body>
 	<header>
 		<h1 th:text="${review.title}"></h1>
-		<h2 th:text="${review.reviewCategory}"></h2>
+		<h2 th:text="'Category: ' +${review.reviewCategory}"></h2>
 		
 	</header>
 
