@@ -12,7 +12,8 @@
 	</header>
 
 	<img th:src="${review.imageUrl}" />
-    <p th:text="${review.content}"></p>
-<a th:href="@{/reviews}">Go back</a>
+    <p><big th:text="${review.content}"></big></p>
+<p><a th:href="@{/reviews}">Go back</a></p>
+<p><small>Copyright 2018 Andy Padula</small></p>
 </body>
 </html>
