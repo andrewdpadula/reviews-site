@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title th:text="${review.title}"></title>
+</head>
+<body>
+	<header>
+		<h1 th:text="${review.title}"></h1>
+		<h2 th:text="${review.reviewCategory}"></h2>
+		
+	</header>
+
+	<img th:src="${review.imageUrl}" />
+    <p th:text="${review.content}"></p>
+<a th:href="@{/reviews}">Go back</a>
+</body>
+</html>

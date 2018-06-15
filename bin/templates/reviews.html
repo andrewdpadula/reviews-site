@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andy's Reviews</title>
+</head>
+<body>
+	<header>
+		<h1>
+			Home
+		</h1>
+	</header>
+	<ul>
+		<li th:each="review : ${reviews}">
+			<a th:href="@{/reviews/} + ${review.id}">
+				<span th:text="${review.title} + ': '"></span>
+				<span th:text="${review.reviewCategory}"></span>
+			</a>
+		</li>
+	</ul>
+</body>
+</html>
