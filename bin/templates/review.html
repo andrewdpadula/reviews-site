@@ -6,7 +6,8 @@
 <body>
 	<header>
 		<h1 th:text="${review.title}"></h1>
-		<h2 th:text="'Category: ' +${review.reviewCategory}"></h2>
+		<p th:text="'Category: ' +${review.reviewCategory} + ' reviews'"></p>
+		<h2 th:text="${review.score} + ' stars out of 5'"></h2>
 		
 	</header>
 

@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class ReviewsSiteRepositoryTest {
 	ReviewsSiteRepository testRepo = new ReviewsSiteRepository();
-	Review testReview = new Review(123L, "test title", "test url", "test category", "test content");
+	Review testReview = new Review(123L, "test title", "test url", "test category", "test content", 5);
 	@Test
 	public void shouldAddNewReviewToRepo() {
 		int numberOfReviewsBeforeAdd = testRepo.getRepoSize();
