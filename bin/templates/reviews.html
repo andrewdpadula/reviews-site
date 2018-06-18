@@ -9,14 +9,18 @@
 			Andy Reviews Pastimes For You
 		</h1>
 	</header>
-	<ul>
-		<li th:each="review : ${reviews}">
-			<a th:href="@{/reviews/} + ${review.id}">
-				<span th:text="${review.title}"></span>
-				<span th:text="'(' + ${review.reviewCategory} + ')'"></span>
-			</a>
-		</li>
-	</ul>
-	<p>Copyright 2018 Andy Padula</p>
+	<main>
+		<ul>
+			<li th:each="review : ${reviews}">
+				<a th:href="@{/reviews/} + ${review.id}">
+					<span th:text="${review.title}"></span>
+					<span th:text="'(' + ${review.reviewCategory} + ')'"></span>
+				</a>
+			</li>
+		</ul>
+	</main>
+	<footer>
+		<p>Copyright 2018 Andy Padula</p>
+	</footer>
 </body>
 </html>

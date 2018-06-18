@@ -10,10 +10,13 @@
 		<h2 th:text="${review.score} + ' stars out of 5'"></h2>
 		
 	</header>
-
-	<img th:src="${review.imageUrl}" />
-    <p><big th:text="${review.content}"></big></p>
-<p><a th:href="@{/reviews}">Go back</a></p>
-<p><small>Copyright 2018 Andy Padula</small></p>
+	<main>
+		<img th:src="${review.imageUrl}" />
+    	<p th:text="${review.content}"></p>
+    </main>
+    <footer>
+		<p><a th:href="@{/reviews}">Go back</a></p>
+		<p><small>Copyright 2018 Andy Padula</small></p>
+	</footer>
 </body>
 </html>
